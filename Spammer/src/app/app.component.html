@@ -1,0 +1,17 @@
+
+<div class="container">
+  <form class="jumbotron">
+  <h3 class="display-5">Esparate, Brucciate, Ammazate and Morate</h3>
+  <label>Fulminate or Brucciate here:</label>
+  <input type='text' name = 'inutile' #new_inutile class="form-control">
+<br>
+  <label>Merry Volts?</label>
+  <input type='number' name = 'numero' #new_number class="form-control">
+  <br>
+  <button class="btn btn-danger" (click) = 'onClick(new_inutile , new_number)'>Esparate</button>
+</form>
+  <ul>
+  <li *ngFor='let Phrase of articles'>
+  <app-phrase [phrase]='Phrase'></app-phrase>
+  </li>
+</ul>
